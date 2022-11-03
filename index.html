@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Мои объявления</title>
+  </head>
+  <body>
+    <main>
+      <section class="ads">
+        <div class="ads__header">
+          <h1>Все мои объявления</h1>
+
+          <ul class="ads__nav">
+            <li class="nav__item nav__item-active">Активные <span>4</span></li>
+            <li class="nav__item">Архив <span>2</span></li>
+            <li class="nav__item">Черновики <span>2</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="sort">
+        <div class="sort__checkbox">
+          <div class="checkbox-wrap">
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              onClick="toggle(this)"
+              id="checkb"
+              name="checkb"
+              value="yes" />
+            <label for="checkb"></label>
+          </div>
+
+          <button class="btn">Снять с публикации</button>
+        </div>
+        <div class="sort__options">
+          <button class="btn popup">
+            Все объявления <img src="./assets/icons/arr.svg" alt="" />
+          </button>
+          <div class="wrap-popup">
+            <button class="btn popup">
+              По дате публикации <img src="./assets/icons/arr-up.svg" alt="" />
+              <img src="./assets/icons/arr.svg" alt="" class="popup-arr" />
+            </button>
+            <div class="popup__tab">
+              <span class="popup__tab__item date-desc popup__tab__item--active"
+                >По дате публикации <img src="./assets/icons/arr-up.svg" alt=""
+              /></span>
+              <span class="popup__tab__item date-asc"
+                >По дате публикации <img src="./assets/icons/arr-down.svg" alt=""
+              /></span>
+              <span class="popup__tab__item price-asc"
+                >По цене <img src="./assets/icons/arr-up.svg" alt=""
+              /></span>
+              <span class="popup__tab__item price-desc"
+                >По цене <img src="./assets/icons/arr-down.svg" alt=""
+              /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="card" data-price="50900" data-date="1667479411424">
+          <div class="card--left">
+            <div class="card__img">
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="checkph"
+                name="checkph"
+                value="yes" />
+              <label for="checkph"></label>
+              <img src="./assets/icons/icons-category.svg" class="icons-category" alt="" />
+              <div class="circle"><img src="./assets/icons/payed.svg" alt="" /></div>
+            </div>
+            <div class="card__info">
+              <h2 class="title deal-title">Сделать что-то</h2>
+              <span class="price">50 900 ₽</span>
+              <ul class="info__list">
+                <li class="info__list__item">Осталось 20 дней</li>
+                <li class="info__list__item">Санкт-Петербург, ст. м. Маяковская</li>
+                <li class="info__list__item type-deal">Тип задания: одноэтапное</li>
+                <li class="info__list__item visibility-none">
+                  Видимость: <span>всем зарегистрированным</span>
+                </li>
+                <li class="info__list__item">Тип публикации: горящее</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card--right">
+            <div class="card__stat">
+              <ul class="card__stat__list">
+                <li>
+                  <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
+                  <span class="list__num"
+                    >4 <span class="list__num__add list__num__add-active">+1</span></span
+                  >
+                </li>
+                <li>
+                  <img src="./assets/icons/views.svg" alt="" />211 просмотров
+                  <span class="list__num__add">+1</span>
+                </li>
+                <li>
+                  <img src="./assets/icons/fav.svg" alt="" /> В избранном
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+                <li>
+                  <img src="./assets/icons/recommend.svg" alt="" /> Подходят
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+              </ul>
+              <div class="progrssbar">
+                <div class="progressbar-out">
+                  <div class="progressbar-inner"></div>
+                </div>
+                <span class="progrssbar__percent">48%</span>
+              </div>
+            </div>
+            <div class="card__btns">
+              <button class="card-btn"><img src="./assets/icons/make-top.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/pen.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/cloud.svg" alt="" /></button>
+              <div class="btns__wrap-popup">
+                <button class="card-btn"><img src="./assets/icons/set.svg" alt="" /></button>
+                <div class="popup__tab">
+                  <span class="popup__tab__item popup__tab__item--active">Передать</span>
+                  <span class="popup__tab__item">Продлевать</span>
+                  <span class="popup__tab__item">В архив</span>
+                  <span class="popup__tab__item">Поделиться</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="5000" data-date="1667479418761">
+          <div class="card--left">
+            <div class="card__img">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/img/backg.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/backg2.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/backg.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/backg2.jpg" alt="" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="checkph0"
+                name="checkph"
+                value="yes" />
+
+              <label for="checkph0"></label>
+              <img src="./assets/icons/icons-category2.svg" class="icons-category" alt="" />
+              <div class="circle"><img src="./assets/icons/payed.svg" alt="" /></div>
+            </div>
+            <div class="card__info">
+              <h2 class="title buy-title">Куплю планшет Samsung</h2>
+              <span class="price">5000 ₽</span>
+              <ul class="info__list">
+                <li class="info__list__item">Осталось 20 дней</li>
+                <li class="info__list__item">Санкт-Петербург, ст. м. Маяковская</li>
+                <li class="info__list__item type-deal visibility-none">Тип задания: одноэтапное</li>
+                <li class="info__list__item">Видимость: <span>всем зарегистрированным</span></li>
+                <li class="info__list__item">Тип публикации: премиум</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card--right">
+            <div class="card__stat">
+              <ul class="card__stat__list">
+                <li>
+                  <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
+                  <span class="list__num"
+                    >4 <span class="list__num__add list__num__add-active">+1</span></span
+                  >
+                </li>
+                <li>
+                  <img src="./assets/icons/views.svg" alt="" />211 просмотров
+                  <span class="list__num__add">+1</span>
+                </li>
+                <li>
+                  <img src="./assets/icons/fav.svg" alt="" /> В избранном
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+                <li>
+                  <img src="./assets/icons/recommend.svg" alt="" /> Подходят
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+              </ul>
+              <div class="progrssbar">
+                <div class="progressbar-out">
+                  <div class="progressbar-inner"></div>
+                </div>
+                <span class="progrssbar__percent">48%</span>
+              </div>
+            </div>
+            <div class="card__btns">
+              <button class="card-btn"><img src="./assets/icons/make-top.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/pen.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/cloud.svg" alt="" /></button>
+              <div class="btns__wrap-popup">
+                <button class="card-btn"><img src="./assets/icons/set.svg" alt="" /></button>
+                <div class="popup__tab">
+                  <span class="popup__tab__item popup__tab__item--active">Передать</span>
+                  <span class="popup__tab__item">Продлевать</span>
+                  <span class="popup__tab__item">В архив</span>
+                  <span class="popup__tab__item">Поделиться</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="5000" data-date="1667479432966">
+          <div class="card--left">
+            <div class="card__img">
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/img/backg2.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/backg.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/backg2.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/backg.jpg" alt="" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="checkph3"
+                name="checkph"
+                value="yes" />
+              <label for="checkph3"></label>
+              <img src="./assets/icons/icons-category3.svg" class="icons-category" alt="" />
+              <div class="circle"><img src="./assets/icons/payed2.svg" alt="" /></div>
+            </div>
+            <div class="card__info">
+              <h2 class="title sell-title">Продам кроссовки</h2>
+              <span class="price">5000 ₽</span>
+              <ul class="info__list">
+                <li class="info__list__item">Осталось 20 дней</li>
+                <li class="info__list__item">Санкт-Петербург, ст. м. Маяковская</li>
+                <li class="info__list__item type-deal visibility-none">Тип задания: одноэтапное</li>
+                <li class="info__list__item">Видимость: <span>всем зарегистрированным</span></li>
+                <li class="info__list__item">Тип публикации: поднятие в топ</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card--right">
+            <div class="card__stat">
+              <ul class="card__stat__list">
+                <li>
+                  <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
+                  <span class="list__num"
+                    >4 <span class="list__num__add list__num__add-active">+1</span></span
+                  >
+                </li>
+                <li>
+                  <img src="./assets/icons/views.svg" alt="" />211 просмотров
+                  <span class="list__num__add">+1</span>
+                </li>
+                <li>
+                  <img src="./assets/icons/fav.svg" alt="" /> В избранном
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+                <li>
+                  <img src="./assets/icons/recommend.svg" alt="" /> Подходят
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+              </ul>
+              <div class="progrssbar">
+                <div class="progressbar-out">
+                  <div class="progressbar-inner"></div>
+                </div>
+                <span class="progrssbar__percent">48%</span>
+              </div>
+            </div>
+            <div class="card__btns">
+              <button class="card-btn"><img src="./assets/icons/make-top.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/pen.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/cloud.svg" alt="" /></button>
+              <div class="btns__wrap-popup">
+                <button class="card-btn"><img src="./assets/icons/set.svg" alt="" /></button>
+                <div class="popup__tab">
+                  <span class="popup__tab__item popup__tab__item--active">Передать</span>
+                  <span class="popup__tab__item">Продлевать</span>
+                  <span class="popup__tab__item">В архив</span>
+                  <span class="popup__tab__item">Поделиться</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="50900" data-date="1667479433840">
+          <div class="card--left">
+            <div class="card__img">
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="checkph2"
+                name="checkph"
+                value="yes" />
+              <label for="checkph2"></label>
+              <span>На модерации</span>
+              <img src="./assets/icons/icons-category4.svg" class="icons-category" alt="" />
+            </div>
+            <div class="card__info">
+              <h2 class="title prof-title">Художник</h2>
+              <span class="price">50 900 ₽</span>
+              <ul class="info__list">
+                <li class="info__list__item">Осталось 20 дней</li>
+                <li class="info__list__item visibility-none">Санкт-Петербург, ст. м. Маяковская</li>
+                <li class="info__list__item type-deal visibility-none">Тип задания: одноэтапное</li>
+                <li class="info__list__item">Видимость: <span>открытая</span></li>
+                <li class="info__list__item">Тип публикации: бесплатно</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card--right">
+            <div class="card__stat">
+              <ul class="card__stat__list">
+                <li>
+                  <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
+                  <span class="list__num"
+                    >4 <span class="list__num__add list__num__add-active">+1</span></span
+                  >
+                </li>
+                <li>
+                  <img src="./assets/icons/views.svg" alt="" />211 просмотров
+                  <span class="list__num__add">+1</span>
+                </li>
+                <li>
+                  <img src="./assets/icons/fav.svg" alt="" /> В избранном
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+                <li>
+                  <img src="./assets/icons/recommend.svg" alt="" /> Подходят
+                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                </li>
+              </ul>
+              <div class="progrssbar">
+                <div class="progressbar-out">
+                  <div class="progressbar-inner"></div>
+                </div>
+                <span class="progrssbar__percent">48%</span>
+              </div>
+            </div>
+            <div class="card__btns">
+              <button class="card-btn"><img src="./assets/icons/make-top.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/pen.svg" alt="" /></button>
+              <button class="card-btn"><img src="./assets/icons/cloud.svg" alt="" /></button>
+              <div class="btns__wrap-popup">
+                <button class="card-btn"><img src="./assets/icons/set.svg" alt="" /></button>
+                <div class="popup__tab">
+                  <span class="popup__tab__item popup__tab__item--active">Передать</span>
+                  <span class="popup__tab__item">Продлевать</span>
+                  <span class="popup__tab__item">В архив</span>
+                  <span class="popup__tab__item">Поделиться</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
