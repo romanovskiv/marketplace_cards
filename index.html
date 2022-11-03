@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,15 +16,12 @@
   <body>
     <main>
       <section class="ads">
-        <div class="ads__header">
-          <h1>Все мои объявления</h1>
-
-          <ul class="ads__nav">
-            <li class="nav__item nav__item-active">Активные <span>4</span></li>
-            <li class="nav__item">Архив <span>2</span></li>
-            <li class="nav__item">Черновики <span>2</span></li>
-          </ul>
-        </div>
+        <h1>Все мои объявления</h1>
+        <ul class="ads__nav">
+          <li class="nav__item nav__item-active">Активные <span>4</span></li>
+          <li class="nav__item">Архив <span>2</span></li>
+          <li class="nav__item">Черновики <span>2</span></li>
+        </ul>
       </section>
       <section class="sort">
         <div class="sort__checkbox">
@@ -179,10 +176,8 @@
             <div class="card__stat">
               <ul class="card__stat__list">
                 <li>
-                  <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
-                  <span class="list__num"
-                    >4 <span class="list__num__add list__num__add-active">+1</span></span
-                  >
+                  <img src="./assets/icons/cloud-add.svg" alt="" /> Предложения
+                  <span class="list__num">3 <span class="list__num__add">+1</span></span>
                 </li>
                 <li>
                   <img src="./assets/icons/views.svg" alt="" />211 просмотров
@@ -190,10 +185,6 @@
                 </li>
                 <li>
                   <img src="./assets/icons/fav.svg" alt="" /> В избранном
-                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
-                </li>
-                <li>
-                  <img src="./assets/icons/recommend.svg" alt="" /> Подходят
                   <span class="list__num">0 <span class="list__num__add">+1</span></span>
                 </li>
               </ul>
@@ -258,21 +249,15 @@
             <div class="card__stat">
               <ul class="card__stat__list">
                 <li>
-                  <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
-                  <span class="list__num"
-                    >4 <span class="list__num__add list__num__add-active">+1</span></span
-                  >
+                  <img src="./assets/icons/cloud-add.svg" alt="" /> Предложения
+                  <span class="list__num">3 <span class="list__num__add">+1</span></span>
                 </li>
                 <li>
-                  <img src="./assets/icons/views.svg" alt="" />211 просмотров
+                  <img src="./assets/icons/views.svg" alt="" />20 просмотров
                   <span class="list__num__add">+1</span>
                 </li>
                 <li>
                   <img src="./assets/icons/fav.svg" alt="" /> В избранном
-                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
-                </li>
-                <li>
-                  <img src="./assets/icons/recommend.svg" alt="" /> Подходят
                   <span class="list__num">0 <span class="list__num__add">+1</span></span>
                 </li>
               </ul>
@@ -299,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="card" data-price="50900" data-date="1667479433840">
+        <div class="card card-prof" data-price="50900" data-date="1667479433840">
           <div class="card--left">
             <div class="card__img">
               <input
@@ -309,12 +294,20 @@
                 name="checkph"
                 value="yes" />
               <label for="checkph2"></label>
-              <span>На модерации</span>
+              <span class="moderation">На модерации</span>
               <img src="./assets/icons/icons-category4.svg" class="icons-category" alt="" />
             </div>
             <div class="card__info">
               <h2 class="title prof-title">Художник</h2>
               <span class="price">50 900 ₽</span>
+              <div class="experience">
+                <img src="/assets/icons/briefcase.svg" alt="" />
+                <div class="experience__info">
+                  <span class="experience__info__job">ООО “АТ-ВОРК”</span><br />Санкт-Петербург, ст.
+                  м. Маяковская
+                </div>
+              </div>
+
               <ul class="info__list">
                 <li class="info__list__item">Осталось 20 дней</li>
                 <li class="info__list__item visibility-none">Санкт-Петербург, ст. м. Маяковская</li>
@@ -330,20 +323,22 @@
                 <li>
                   <img src="./assets/icons/vacancy-icons.svg" alt="" /> Отклики
                   <span class="list__num"
-                    >4 <span class="list__num__add list__num__add-active">+1</span></span
+                    >3 <span class="list__num__add list__num__add-active">+1</span></span
                   >
                 </li>
                 <li>
-                  <img src="./assets/icons/views.svg" alt="" />211 просмотров
+                  <img src="./assets/icons/cloud-add.svg" alt="" /> Приглашены
+                  <span class="list__num">3 <span class="list__num__add">+1</span></span>
+                </li>
+                <li>
+                  <img src="./assets/icons/views.svg" alt="" />Просмотры
+                  <span class="list__num">268</span>
                   <span class="list__num__add">+1</span>
                 </li>
-                <li>
-                  <img src="./assets/icons/fav.svg" alt="" /> В избранном
-                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
-                </li>
+
                 <li>
                   <img src="./assets/icons/recommend.svg" alt="" /> Подходят
-                  <span class="list__num">0 <span class="list__num__add">+1</span></span>
+                  <span class="list__num">16 <span class="list__num__add">+1</span></span>
                 </li>
               </ul>
               <div class="progrssbar">
@@ -372,7 +367,7 @@
       </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
